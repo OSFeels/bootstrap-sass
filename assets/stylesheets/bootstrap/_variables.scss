@@ -15,8 +15,8 @@ $dark-yellow:           #dea54b !default;
 $pink:                  #cd499a !default;
 $purple:                #3b2870 !default;
 
-.blue   { color: $blue; }
 .pink   { color: $pink; }
+.blue   { color: $blue; }
 .purple { color: $purple; }
 
 $brand-primary:         $purple !default;
@@ -98,6 +98,12 @@ $icon-font-path: if($bootstrap-sass-asset-helper, "bootstrap/", "../fonts/bootst
 $icon-font-name:          "glyphicons-halflings-regular" !default;
 //** Element ID within SVG icon file.
 $icon-font-svg-id:        "glyphicons_halflingsregular" !default;
+
+img.confetti {
+  display: block;
+  width: 25px;
+  margin: 25px auto;
+}
 
 
 //== Components
