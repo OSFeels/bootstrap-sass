@@ -9,11 +9,21 @@ $bootstrap-sass-asset-helper: false !default;
 //## Gray and brand colors for use across Bootstrap.
 
 
-$brand-primary:         #3a1772 !default; // #337ab7
-$brand-success:         #d741a7 !default;
-$brand-info:            #5398be !default;
-$brand-warning:         #f2cd5d !default;
-$brand-danger:          #dea54b !default;
+$blue:                  #5398be !default;
+$light-yellow:          #f2cd5d !default;
+$dark-yellow:           #dea54b !default;
+$pink:                  #cd499a !default;
+$purple:                #3b2870 !default;
+
+.blue   { color: $blue; }
+.pink   { color: $pink; }
+.purple { color: $purple; }
+
+$brand-primary:         $purple !default;
+$brand-success:         $pink !default;
+$brand-info:            $blue !default;
+$brand-warning:         $light-yellow !default;
+$brand-danger:          $dark-yellow !default;
 
 $gray-base:              darken($brand-info, 55%) !default;
 $gray-darker:            lighten($gray-base, 13.5%) !default; // #222
@@ -45,22 +55,22 @@ $link-hover-decoration: underline !default;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif:  "Lato", Helvetica,  sans-serif !default;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
 
-$font-size-base:          18px !default;
-$font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
-$font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
+$font-size-base:          16px !default;
+$font-size-large:         ceil(($font-size-base * 1.25)) !default;
+$font-size-small:         ceil(($font-size-base * 0.85)) !default;
 
-$font-size-h1:            floor(($font-size-base * 2.6)) !default; // ~36px
-$font-size-h2:            floor(($font-size-base * 2.15)) !default; // ~30px
-$font-size-h3:            ceil(($font-size-base * 1.7)) !default; // ~24px
-$font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-h1:            floor(($font-size-base * 2.6)) !default;
+$font-size-h2:            floor(($font-size-base * 1.68)) !default;
+$font-size-h3:            ceil(($font-size-base * 1.25)) !default;
+$font-size-h4:            ceil(($font-size-base * 1)) !default;
 $font-size-h5:            $font-size-base !default;
-$font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
+$font-size-h6:            ceil(($font-size-base * 0.85)) !default;
 
 //** Unit-less `line-height` for use in components like buttons.
 $line-height-base:        1.428571429 !default; // 20/14
@@ -69,7 +79,7 @@ $line-height-computed:    floor(($font-size-base * $line-height-base)) !default;
 
 //** By default, this inherits from the `<body>`.
 $headings-font-family:    inherit !default;
-$headings-font-weight:    500 !default;
+$headings-font-weight:    900 !default;
 $headings-line-height:    1.1 !default;
 $headings-color:          inherit !default;
 
@@ -488,10 +498,13 @@ $pager-disabled-color:                 $pagination-disabled-color !default;
 
 $jumbotron-padding:              30px !default;
 $jumbotron-color:                inherit !default;
-$jumbotron-bg:                   $gray-lighter !default;
+$jumbotron-bg:                   $purple !default;
 $jumbotron-heading-color:        inherit !default;
 $jumbotron-font-size:            ceil(($font-size-base * 1.5)) !default;
 
+.jumbotron img {
+  width: 60%;
+}
 
 //== Form states and alerts
 //
