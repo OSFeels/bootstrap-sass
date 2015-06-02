@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6,
   width: 60%;
 }
 
-@media (max-width: $screen-xs-max) {
+@media (max-width: $screen-sm-max) {
   .jumbotron img {
     width: 100%;
     margin-bottom: 20px;
@@ -61,10 +61,10 @@ h1, h2, h3, h4, h5, h6,
     &::-webkit-input-placeholder {
       color: $purple;
     }
-    &::-moz-placeholder { 
+    &::-moz-placeholder {
       color: $purple;
-    } 
-    &:-ms-input-placeholder { 
+    }
+    &:-ms-input-placeholder {
       color: $purple;
     }
   }
