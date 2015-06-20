@@ -1,3 +1,17 @@
+# OS&F Bootstrap Sass Fork
+
+## Updating Styles
+
+The SCSS files can be found in `assets/stylesheets`. If you want to require additional files, update `_bootstrap.scss`. Update general variables in `assets/stylesheets/bootstrap/_variables.scss` or add custom styles to `assets/stylesheets/bootstrap/_custom.scss`.
+
+Once you've made your changes and updated this repo, generate and add the new minified CSS to our main repo:
+
+```console
+$ sass assets/stylesheets/_bootstrap.scss:PATH/TO/MAIN/REPO/OSFeels.com/app/public/css/bootstrap-theme.css --style compressed
+```
+
+---
+
 # Bootstrap for Sass
 [![Gem Version](https://badge.fury.io/rb/bootstrap-sass.svg)](http://badge.fury.io/rb/bootstrap-sass)
 [![npm version](https://img.shields.io/npm/v/bootstrap-sass.svg?style=flat)](https://www.npmjs.com/package/bootstrap-sass)
