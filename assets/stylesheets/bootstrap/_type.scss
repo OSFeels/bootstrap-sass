@@ -12,6 +12,7 @@ h1, h2, h3, h4, h5, h6,
   font-weight: $headings-font-weight;
   line-height: $headings-line-height;
   color: $headings-color;
+  text-align: center;
 
   small,
   .small {
@@ -60,7 +61,7 @@ p {
 }
 
 .lead {
-  margin-bottom: $line-height-computed;
+  margin-bottom: 0;
   font-size: floor(($font-size-base * 1.15));
   font-weight: 300;
   line-height: 1.4;
